@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dip">
 
     <TextView
-        android:layout_width="fill_parent"
+        android:id="@+id/contact_label"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World, MainActivity"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="@string/contact_label"
         />
-</LinearLayout>
+
+    <Spinner
+        android:id="@+id/contact_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dip"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/contact_label"
+        />
+
+    <ImageButton
+        android:id="@+id/record_button"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/contact_spinner"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:contentDescription="@string/record_label"
+        android:src="@drawable/ic_record_button"
+        />
+
+    <TextView
+        android:id="@+id/record_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/record_button"
+        android:text="@string/record_label"
+        />
+    <TextView
+        android:id="@+id/result_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/resultlist"
+        android:layout_marginBottom="10dip"
+        android:text="@string/result"
+        />
+    <ListView
+        android:id="@+id/resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_above="@id/save_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dip"
+        />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/save"
+        />
+</RelativeLayout>
 

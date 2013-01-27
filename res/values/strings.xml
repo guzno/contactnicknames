@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Contact Nicknames</string>
+    <string name="contact_label">Pick a Contact</string>
+    <string name="record_label">Record nickname</string>
+    <string name="result">Result</string>
+    <string name="result_hint">Result to set as nickname</string>
+    <string name="save">Save nickname to contact</string>
 </resources>
